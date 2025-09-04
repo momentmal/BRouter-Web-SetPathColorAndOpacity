@@ -7,6 +7,7 @@ At the moment, no seperate coloring of isolated tracks is possible by hiding / u
 ## Changelog
 See [CHANGELOG.md](https://github.com/momentmal/BRouter-Web-SetPathColorAndOpacity/blob/main/CHANGELOG.md).
 
+## Screenshots
 
 <img width="175" height="138" alt="image" src="https://github.com/user-attachments/assets/eb87b9ad-8b49-4078-b60f-fda01dcd50f3" />
 <br>
