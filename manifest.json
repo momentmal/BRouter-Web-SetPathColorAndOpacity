@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "BRouter Set Path color+opacity",
+  "version": "1.0",
+  "description": "Changes the loaded path elements on BRouter to a custom color and opacity. Make sure to include custom BRouter URL in the manifest.json.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["https://bikerouter.de/*", "https://brouter.de/*"],
+    "js": ["content.js"]
+  }],
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "BRouter Set Path color+opacity",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "storage"]
+}
