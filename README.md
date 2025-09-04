@@ -9,7 +9,7 @@ See [CHANGELOG.md](https://github.com/momentmal/BRouter-Web-SetPathColorAndOpaci
 
 ## Screenshots
 
-<img width="175" height="138" alt="image" src="https://github.com/user-attachments/assets/eb87b9ad-8b49-4078-b60f-fda01dcd50f3" />
+<img width="178" height="151" alt="image" src="https://github.com/user-attachments/assets/56891d23-4045-4503-b4c3-a42dace9fc0b" />
 <br>
 <img width="525" height="258" alt="image" src="https://github.com/user-attachments/assets/78b0a5e5-39b9-4581-9e32-2a5319aa8328" />
 <img width="525" height="258" alt="image" src="https://github.com/user-attachments/assets/ec9f087e-1288-414c-bd4c-37631ecfa640" />
