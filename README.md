@@ -1,4 +1,4 @@
-##Description
+## Description
 
 This is a quick hack (Chrome Extension) I did (via AI assisted coding) for BRouter-Web to allow me to recolor the blue imported GPX tracks.
 Note that currently the functionality is limited. The Extension modifies the DOM globally and recolors the path elements there.
