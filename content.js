@@ -1,5 +1,6 @@
 function applyColors(color, opacity) {
-  const paths = document.querySelectorAll("path");
+  // only target real route lines, not helpers or icons
+  const paths = document.querySelectorAll(".leaflet-overlay-pane path.leaflet-interactive");
   paths.forEach((path) => {
     path.style.stroke = color;
     path.style.strokeOpacity = opacity;
@@ -17,7 +18,10 @@ function startObserver() {
     for (const m of mutations) {
       m.addedNodes.forEach((node) => {
         if (node.nodeType === 1) {
-          if (node.tagName === "path" || node.querySelector?.("path")) {
+          if (
+            (node.tagName === "path" && node.closest(".leaflet-overlay-pane, .leaflet-pane")) ||
+            node.querySelector?.(".leaflet-overlay-pane path, .leaflet-pane path")
+          ) {
             applyColors(lastColor, lastOpacity);
           }
         }
