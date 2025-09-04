@@ -7,7 +7,7 @@
     "service_worker": "background.js"
   },
   "content_scripts": [{
-    "matches": ["https://bikerouter.de/*", "https://brouter.de/*"],
+    "matches": ["https://bikerouter.de/*", "https://brouter.de/*", "https://dev.bikerouter.de/*", "https://next.bikerouter.de/*"],
     "js": ["content.js"]
   }],
   "action": {
