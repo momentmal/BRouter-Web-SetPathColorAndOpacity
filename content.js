@@ -1,6 +1,6 @@
 function applyColors(color, opacity) {
-  // only target real route lines, not helpers or icons
-  const paths = document.querySelectorAll(".leaflet-overlay-pane path.leaflet-interactive");
+  // only recolor paths inside the tracks pane
+  const paths = document.querySelectorAll(".leaflet-pane.leaflet-tracks-pane path");
   paths.forEach((path) => {
     path.style.stroke = color;
     path.style.strokeOpacity = opacity;
@@ -19,8 +19,10 @@ function startObserver() {
       m.addedNodes.forEach((node) => {
         if (node.nodeType === 1) {
           if (
-            (node.tagName === "path" && node.closest(".leaflet-overlay-pane, .leaflet-pane")) ||
-            node.querySelector?.(".leaflet-overlay-pane path, .leaflet-pane path")
+            // direct path element inside tracks pane
+            (node.tagName === "path" && node.closest(".leaflet-pane.leaflet-tracks-pane")) ||
+            // or container that includes such paths
+            node.querySelector?.(".leaflet-pane.leaflet-tracks-pane path")
           ) {
             applyColors(lastColor, lastOpacity);
           }
