@@ -5,7 +5,7 @@ Note that currently the functionality is limited. The Extension modifies the DOM
 At the moment, no seperate coloring of isolated tracks is possible by hiding / unhiding paths that should not be affected.
 
 ## Changelog
-See [CHANGELOG.md](https://github.com/momentmal/BRouter-Web-SetPathColorAndOpacity/blob/main/CHANGELOG.md).
+See [GitHub Releases](https://github.com/momentmal/BRouter-Web-SetPathColorAndOpacity/releases).
 
 ## Screenshots
 
